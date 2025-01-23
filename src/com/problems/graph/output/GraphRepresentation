@@ -1,0 +1,37 @@
+maximum number of graphs possible with 5 nodes are 1024 with the formula 2 ^ n*(n-1)/2 
+Below is the adjacency list representation
+0 -> [1, 4]
+1 -> [0, 2, 3, 4]
+2 -> [1, 3]
+3 -> [1, 2, 4]
+4 -> [0, 1, 3]
+Undirected graph using matrix
+0 1 0 1 
+1 0 1 1 
+0 1 0 1 
+1 1 1 0 
+Undirected graph using adjacency list
+1 -> [2, 4]
+2 -> [1, 3, 4]
+3 -> [2, 4]
+4 -> [1, 3, 2]
+Directed graph using matrix
+0 0 0 1 
+1 0 1 1 
+0 0 0 1 
+0 0 0 0 
+Directed graph using adjacency list
+1 -> [4]
+2 -> [1, 3, 4]
+3 -> [4]
+4 -> []
+Weighted directed graph using matrix
+0 0 0 4 
+2 0 3 2 
+0 0 0 7 
+0 0 0 0 
+Weighted directed graph using adjacency list
+1 -> [[end=4, weight=4]]
+2 -> [[end=1, weight=2], [end=3, weight=3], [end=4, weight=2]]
+3 -> [[end=4, weight=7]]
+4 -> []
